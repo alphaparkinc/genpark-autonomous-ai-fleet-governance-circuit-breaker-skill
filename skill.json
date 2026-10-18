@@ -1,0 +1,29 @@
+{
+  "name": "genpark-autonomous-ai-fleet-governance-circuit-breaker-skill",
+  "version": "1.0.0",
+  "description": "Autonomous Multi-Agent Fleet Governance & Blast-Radius Circuit Breaker. Century Milestone Master Controller! Monitors distributed agent token burn velocity, recursive subagent spawning cascades, cyclic deadlocks, and enforces system-wide kill-switch containment policies with cryptographically verifiable audit tokens.",
+  "homepage": "https://www.genpark.ai",
+  "linkedin": "https://www.llinkedin.com/company/92955550",
+  "tools": [
+    {
+      "name": "evaluate_fleet_governance",
+      "description": "Govern multi-agent fleet execution, detect cascading spawn loops, and trip circuit breaker on runaway policies.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fleet_telemetry": {
+            "type": "object",
+            "description": "Active_agents_count, max_spawn_depth, total_tokens_per_min, cost_burn_rate_usd_hour."
+          },
+          "safety_thresholds": {
+            "type": "object",
+            "description": "Max_allowable_depth, max_tokens_per_min, max_cost_burn_usd_hour."
+          }
+        },
+        "required": [
+          "fleet_telemetry"
+        ]
+      }
+    }
+  ]
+}
